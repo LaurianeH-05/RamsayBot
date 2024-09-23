@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f8d2e2; /* Light pink background */
+}
+
+.header {
+  background-color: #ff6f91; /* Pastel pink */
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  flex: 0 0 5%; /* Takes 1/10 of the height */
+}
+
+.tips-banner {
+  background-color: #ffccbc; /* Soft yellow */
+  padding: 15px;
+  text-align: center;
+  flex: 0 0 10%; /* Takes 3/10 of the height */
+}
+
+.chat-box {
+  flex: 1; /* Takes the remaining space */
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #fff; /* White background for chat */
+}
+
+.user-message {
+  background-color: #ffb3ba; /* Lighter pink for user messages */
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  align-self: flex-end; /* Align user messages to the right */
+}
+
+.bot-message {
+  background-color: #b9fbc0; /* Light green for bot messages */
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  align-self: flex-start; /* Align bot messages to the left */
+}
+
+.input-banner {
+  background-color: #ff6f91; /* Same color as header */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: #ffccbc; /* Soft yellow */
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
